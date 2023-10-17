@@ -1,0 +1,12 @@
+int chiken = int.Parse(Console.ReadLine());
+int fish = int.Parse(Console.ReadLine());
+int vegan = int.Parse(Console.ReadLine());
+
+double menuC = chiken * 10.35;
+double menuF = fish * 12.40;
+double menuV = vegan * 8.15;
+double t = menuC + menuF + menuV;
+double desert = 0.20 * t;
+double delivery = 2.50;
+double total = t + desert + delivery;
+Console.WriteLine("The sum is: " + total);
