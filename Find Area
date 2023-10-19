@@ -1,0 +1,49 @@
+using System.Collections.Generic;
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        string sq = Console.ReadLine();
+       
+        double second = double.Parse(Console.ReadLine());
+        
+      
+       
+        
+       
+        if (sq == "square")
+        {
+            double ss = second * second;
+            Console.WriteLine(ss);
+
+        }
+        
+        else if (sq == "rectangle")
+        {
+            double first = double.Parse(Console.ReadLine());
+            double rs = first * second;
+            Console.WriteLine(rs);
+        }
+        
+        else if ( sq== "circle")
+        {
+            double cc = (second * second) * Math.PI;
+
+            Console.WriteLine(cc);
+        }
+        else if(sq == "triangle")
+        {
+            double first = double.Parse(Console.ReadLine());
+            double strian = (first * second) / 2;
+            Console.WriteLine(strian);
+        }
+        else
+        {
+            Console.WriteLine("Wrong input");
+
+        }
+
+
+    }
+}
